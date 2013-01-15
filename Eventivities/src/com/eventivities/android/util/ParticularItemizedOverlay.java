@@ -8,6 +8,7 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.graphics.drawable.Drawable;
 
+import com.eventivities.android.MapsActivity;
 import com.eventivities.android.R;
 import com.eventivities.android.domain.Local;
 import com.google.android.maps.GeoPoint;
@@ -16,8 +17,8 @@ import com.google.android.maps.MapView;
 import com.google.android.maps.OverlayItem;
 
 /**
- * Clase que se encarga de manejar la inserción de puntos en el mapa
- * Controla las capas que en el mapa se dibujan, como los puntos y la información contenida en ellos
+ * Clase que se encarga de manejar la inserciï¿½n de puntos en el mapa
+ * Controla las capas que en el mapa se dibujan, como los puntos y la informaciï¿½n contenida en ellos
  * 
  *  @author vimopre
  *  @param defaultMarker el marcador del punto a insertar
@@ -64,7 +65,7 @@ public class ParticularItemizedOverlay extends ItemizedOverlay<OverlayItem> {
 
          dialog.setTitle(item.getNombreLocal());
          dialog.setIcon(R.drawable.info); 
-         dialog.setMessage("Dirección: "+item.getDireccion()+ "\n"+"Teléfono: "+item.getTelefono());
+         dialog.setMessage(mContext.getResources().getString(R.string.Direccion)+": " +item.getDireccion()+ "\n"+ mContext.getResources().getString(R.string.telefono)+": "+item.getTelefono());
          dialog.setPositiveButton(R.string.dialogoInfo_local_YES,  new OnClickListener(){
         	 
         	 public void onClick(DialogInterface dialog, int which) {
