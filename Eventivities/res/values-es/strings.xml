@@ -72,6 +72,8 @@
 	    	    
 	<string name="votar_ExitoAlVotar">Tu voto y comentario se ha guardado \n\n gracias por compartir tu opinión</string>
 	<string name="votar_VotoOk"> guardado </string>
+	<string name="Direccion">Dirección </string>
+	<string name="telefono">Teléfono</string>
 	
 	<string name="detalle_eventoBotonComentarios">Ver comentarios</string>
 	         
